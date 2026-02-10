@@ -1,0 +1,106 @@
+/* Material Dark-ish palette */
+@define-color bg      #1e1f24;
+@define-color surface #25262b;
+@define-color surface2 #2c2d33;
+@define-color fg      #e6e6e6;
+@define-color muted   #a9abb3;
+@define-color accent  #80cbc4;  /* teal-ish */
+@define-color warn    #ffb74d;
+@define-color crit    #ef5350;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+  font-size: 10;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @fg;
+}
+
+/* Main bar container */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  background: @surface;
+  padding: 6px 10px;
+  margin: 0 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Left side: workspaces */
+#workspaces {
+  padding: 3px 8px;
+}
+
+#workspaces button {
+  color: @muted;
+  background: transparent;
+  padding: 0 6px;
+  margin: 0 2px;
+  border-radius: 10px;
+  transition: all 120ms ease;
+}
+
+#workspaces button.active {
+  color: @bg;
+  background: @accent;
+}
+
+#workspaces button.urgent {
+  color: @bg;
+  background: @warn;
+}
+
+#workspaces button:hover {
+  background: @surface2;
+  color: @fg;
+}
+
+/* Window title */
+#window {
+  color: @muted;
+}
+#window.empty {
+  color: rgba(255,255,255,0.35);
+}
+
+/* Center clock */
+#clock {
+  background: @surface2;
+  color: @fg;
+  font-weight: 600;
+}
+
+/* Right modules */
+#pulseaudio {
+  color: @fg;
+}
+#pulseaudio.muted {
+  color: @muted;
+}
+
+#network.disconnected {
+  color: @muted;
+}
+
+#battery.warning {
+  color: @warn;
+}
+#battery.critical {
+  color: @crit;
+}
+
+/* Tray icons look better with a touch of padding */
+#tray {
+  padding: 6px 8px;
+}
+
