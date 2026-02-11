@@ -1,0 +1,3 @@
+[general]
+import = ["~/.config/alacritty/themes/carbon.toml"]
+
