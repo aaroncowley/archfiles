@@ -1,0 +1,72 @@
+# Vira Carbon — Alacritty theme (TOML)
+# Save as: ~/.config/alacritty/themes/vira-carbon.toml
+
+[colors.primary]
+background = "#0B0F14"  # carbon
+foreground = "#D6DEE8"  # soft light
+
+[colors.cursor]
+text   = "#0B0F14"
+cursor = "#5CE1E6"      # neon cyan
+
+[colors.vi_mode_cursor]
+text   = "#0B0F14"
+cursor = "#A6FF4D"      # neon lime
+
+[colors.selection]
+text       = "#D6DEE8"
+background = "#1B2430"
+
+[colors.search.matches]
+foreground = "#0B0F14"
+background = "#FFD166"
+
+[colors.search.focused_match]
+foreground = "#0B0F14"
+background = "#5CE1E6"
+
+[colors.hints.start]
+foreground = "#0B0F14"
+background = "#FFD166"
+
+[colors.hints.end]
+foreground = "#0B0F14"
+background = "#A6FF4D"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#0B0F14"
+background = "#D6DEE8"
+
+[colors.normal]
+black   = "#10161D"
+red     = "#FF5C7A"
+green   = "#A6FF4D"
+yellow  = "#FFD166"
+blue    = "#5CA7FF"
+magenta = "#C792EA"
+cyan    = "#5CE1E6"
+white   = "#D6DEE8"
+
+[colors.bright]
+black   = "#2A3441"
+red     = "#FF7A93"
+green   = "#C3FF7A"
+yellow  = "#FFE29A"
+blue    = "#83C1FF"
+magenta = "#E1B7FF"
+cyan    = "#87F0F2"
+white   = "#F2F6FB"
+
+[colors.dim]
+black   = "#0B0F14"
+red     = "#C94A60"
+green   = "#78B83A"
+yellow  = "#C8A24D"
+blue    = "#3F74B5"
+magenta = "#8E62A9"
+cyan    = "#3EA6AA"
+white   = "#A8B2BE"
